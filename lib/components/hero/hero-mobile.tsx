@@ -55,7 +55,7 @@ export const HeroMobile = () => {
         />
       </div>
 
-      <div className="absolute flex flex-col top-0 left-0  w-full z-10">
+      <div className="absolute flex flex-col top-0 left-0 w-full z-10">
         <div className="relative h-[57.5vh] w-full">
           {keyword.map((item) => (
             <div

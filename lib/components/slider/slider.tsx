@@ -17,7 +17,7 @@ export const Slider = () => {
   );
 
   return (
-    <div className="flex flex-col items-center justify-center gap-8 w-full max-w-full overflow-hidden">
+    <div className="flex flex-col items-center justify-center gap-8 w-full max-w-full overflow-hidden mt-8">
       <div className="flex flex-col items-center justify-center">
         <h2 className="text-3xl font-bold">DESIGN EN VEDETTES</h2>
         <p className="text-sm text-orange font-semibold">

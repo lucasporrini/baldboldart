@@ -56,7 +56,7 @@ export const FloatingPopup = ({ isOpen, onClose }: FloatingPopupProps) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 p-4 flex flex-col items-center overflow-y-auto bg-background">
+    <div className="fixed inset-0 z-50 p-4 pb-0 flex flex-col items-center overflow-y-auto bg-background">
       <div className="flex justify-end w-full">
         <button
           onClick={onClose}
@@ -71,7 +71,7 @@ export const FloatingPopup = ({ isOpen, onClose }: FloatingPopupProps) => {
         width={CONSTANTES.POPUP.IMAGE_WIDTH}
         height={CONSTANTES.POPUP.IMAGE_HEIGHT}
       />
-      <div className="bg-white rounded-3xl p-4 flex flex-col gap-6 items-center mt-20">
+      <div className="bg-white rounded-t-3xl p-4 flex flex-col gap-6 items-center mt-20">
         <h2 className="text-4xl font-bold text-orange">Maxime Leconte</h2>
         {DATA.map((item, index) => (
           <div key={index} className="flex flex-col items-center gap-2">
