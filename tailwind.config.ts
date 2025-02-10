@@ -8,12 +8,16 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./lib/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: ["bg-orange", "bg-rose", "text-orange", "text-rose"],
   theme: {
     extend: {
       colors: {
         background: `${globalConfig.colors.background}`,
         orange: {
           DEFAULT: `${globalConfig.colors.orange}`,
+        },
+        rose: {
+          DEFAULT: `${globalConfig.colors.rose}`,
         },
         foreground: "hsl(var(--foreground))",
         card: {

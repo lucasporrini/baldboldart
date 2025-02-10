@@ -1,7 +1,9 @@
+import { useColor } from "@/lib/context/color-context";
 import globalConfig from "@/lib/global.config";
 import Image from "next/image";
 
 export const MobileContact = () => {
+  const { mainColor } = useColor();
   return (
     <div className="w-full flex flex-col items-center justify-center text-center mt-20">
       <Image
@@ -11,7 +13,9 @@ export const MobileContact = () => {
         height={100}
         className="w-full h-full object-cover"
       />
-      <div className="flex flex-col items-center justify-center w-full bg-orange">
+      <div
+        className={`flex flex-col items-center justify-center w-full bg-${mainColor}`}
+      >
         <p
           onClick={() => {
             window.open(`mailto:${globalConfig.email}`, "_blank");

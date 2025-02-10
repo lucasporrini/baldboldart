@@ -7,6 +7,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import { useColor } from "@/lib/context/color-context";
 
 export const Slider = () => {
   const plugin = React.useRef(
@@ -15,12 +16,13 @@ export const Slider = () => {
       stopOnInteraction: true,
     })
   );
+  const { mainColor } = useColor();
 
   return (
     <div className="flex flex-col items-center justify-center gap-8 w-full max-w-full overflow-hidden mt-8">
       <div className="flex flex-col items-center justify-center">
         <h2 className="text-3xl font-bold">DESIGN EN VEDETTES</h2>
-        <p className="text-sm text-orange font-semibold">
+        <p className={`text-sm text-${mainColor} font-semibold`}>
           derniers projets ou les plus notables
         </p>
       </div>
@@ -48,7 +50,7 @@ export const Slider = () => {
                       </span>
                     </CardContent>
                   </Card>
-                  <button className="text-sm rounded-full bg-orange text-white font-semibold px-4 py-2 mt-2">
+                  <button className="text-sm rounded-full bg-${mainColor} text-white font-semibold px-4 py-2 mt-2">
                     Voir le projet
                   </button>
                 </div>

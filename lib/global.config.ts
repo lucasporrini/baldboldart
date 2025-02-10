@@ -6,5 +6,6 @@ export default {
   colors: {
     orange: "#FF7906",
     background: "#EDE6D3",
+    rose: "#FF6C7C",
   },
 };

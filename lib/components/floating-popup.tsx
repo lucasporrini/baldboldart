@@ -1,5 +1,6 @@
 "use client";
 
+import { useColor } from "@/lib/context/color-context";
 import Image from "next/image";
 import { useCallback, useEffect, useMemo } from "react";
 import { BsArrowReturnLeft } from "react-icons/bs";
@@ -12,6 +13,7 @@ interface FloatingPopupProps {
 }
 
 export const FloatingPopup = ({ isOpen, onClose }: FloatingPopupProps) => {
+  const { mainColor } = useColor();
   const DATA: { title: string; description: string }[] = useMemo(
     () => [
       {
@@ -60,7 +62,7 @@ export const FloatingPopup = ({ isOpen, onClose }: FloatingPopupProps) => {
       <div className="flex justify-end w-full">
         <button
           onClick={onClose}
-          className="bg-orange size-14 flex items-center justify-center text-white p-1 rounded-full"
+          className={`bg-${mainColor} size-14 flex items-center justify-center text-white p-1 rounded-full`}
         >
           <BsArrowReturnLeft className="text-2xl" />
         </button>
@@ -72,10 +74,12 @@ export const FloatingPopup = ({ isOpen, onClose }: FloatingPopupProps) => {
         height={CONSTANTES.POPUP.IMAGE_HEIGHT}
       />
       <div className="bg-white rounded-t-3xl p-4 flex flex-col gap-6 items-center mt-20">
-        <h2 className="text-4xl font-bold text-orange">Maxime Leconte</h2>
+        <h2 className={`text-4xl font-bold text-${mainColor}`}>
+          Maxime Leconte
+        </h2>
         {DATA.map((item, index) => (
           <div key={index} className="flex flex-col items-center gap-2">
-            <h3 className="text-lg font-bold text-orange">
+            <h3 className={`text-lg font-bold text-${mainColor}`}>
               {item.title.toUpperCase()}
             </h3>
             <p className="text-center">{item.description}</p>
@@ -87,7 +91,7 @@ export const FloatingPopup = ({ isOpen, onClose }: FloatingPopupProps) => {
             onClick={() => {
               window.open(`mailto:${globalConfig.email}`, "_blank");
             }}
-            className="text-lg font-bold text-orange"
+            className={`text-lg font-bold text-${mainColor}`}
           >
             {globalConfig.email.toUpperCase()}
           </p>
