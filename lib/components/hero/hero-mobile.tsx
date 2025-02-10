@@ -17,15 +17,15 @@ export const HeroMobile = () => {
       {
         name: "BRANDING",
         position: {
-          top: "top-14",
-          left: "left-20",
+          top: "top-[10%]",
+          left: "left-[10%]",
         },
         color: "text-white",
       },
       {
         name: "ILLUSTRATION",
         position: {
-          top: "top-2/4",
+          top: "top-[50%]",
           left: "left-[40%]",
         },
         color: "text-white",
@@ -33,8 +33,8 @@ export const HeroMobile = () => {
       {
         name: "MOTION",
         position: {
-          top: "top-3/4",
-          left: "left-16",
+          top: "top-[70%]",
+          left: "left-[10%]",
         },
         color: "text-white",
       },
@@ -56,7 +56,7 @@ export const HeroMobile = () => {
       </div>
 
       <div className="absolute flex flex-col top-0 left-0  w-full z-10">
-        <div className="relative h-[540px] w-full">
+        <div className="relative h-[57.5vh] w-full">
           {keyword.map((item) => (
             <div
               key={item.name}
