@@ -43,7 +43,7 @@ export const Services = () => {
               </div>
             </div>
             {index < services.length - 1 && (
-              <div className={`w-full h-[1px] bg-${mainColor}/30 my-8`} />
+              <div className={`w-full h-[1px] bg-${mainColor} my-8`} />
             )}
           </div>
         ))}
