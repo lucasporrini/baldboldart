@@ -9,8 +9,8 @@ export const MobileContact = () => {
       <Image
         src={`/mobile-footer-${mainColor}.webp`}
         alt="Contact"
-        width={100}
-        height={100}
+        width={400}
+        height={200}
         className="w-full h-full object-cover"
       />
       <div
