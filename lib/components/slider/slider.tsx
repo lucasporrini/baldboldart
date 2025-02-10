@@ -17,14 +17,14 @@ export const Slider = () => {
   );
 
   return (
-    <div className="flex flex-col items-center justify-center gap-8">
+    <div className="flex flex-col items-center justify-center gap-8 w-full max-w-full overflow-hidden">
       <div className="flex flex-col items-center justify-center">
         <h2 className="text-3xl font-bold">DESIGN EN VEDETTES</h2>
         <p className="text-sm text-orange font-semibold">
           derniers projets ou les plus notables
         </p>
       </div>
-      <div className="relative w-full mx-auto">
+      <div className="relative w-full">
         <Carousel
           plugins={[plugin.current]}
           className="w-full"
@@ -37,14 +37,11 @@ export const Slider = () => {
             containScroll: "trimSnaps",
           }}
         >
-          <CarouselContent className="-ml-2 md:-ml-4">
+          <CarouselContent className="-ml-1">
             {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem
-                key={index}
-                className="pl-2 md:pl-4 basis-[65%] md:basis-[65%]"
-              >
+              <CarouselItem key={index} className="pl-1 basis-[65%]">
                 <div className="p-2 flex flex-col items-center gap-2">
-                  <Card className="max-w-[250px] mx-auto w-full">
+                  <Card className="w-full">
                     <CardContent className="flex aspect-square items-center justify-center p-4">
                       <span className="text-3xl font-semibold">
                         {index + 1}

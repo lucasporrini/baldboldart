@@ -12,13 +12,7 @@ export const MobileLayout = () => {
   return (
     <div className="flex flex-col items-center justify-center relative">
       <HeroMobile />
-      <FloatingButton />
-      <button
-        onClick={() => setIsPopupOpen(true)}
-        className="fixed bottom-4 right-4 z-40 rounded-full bg-orange text-white p-4 shadow-lg"
-      >
-        Voir les projets
-      </button>
+      <FloatingButton onClick={() => setIsPopupOpen((prev) => !prev)} />
       <FloatingPopup
         isOpen={isPopupOpen}
         onClose={() => setIsPopupOpen(false)}
