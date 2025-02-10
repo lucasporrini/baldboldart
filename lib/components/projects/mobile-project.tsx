@@ -25,7 +25,7 @@ export const MobileProject = () => {
 
       <div className="flex flex-col items-center justify-center gap-4 max-w-xs text-center mt-20">
         <div className="flex flex-col items-center justify-center">
-          <h2 className="text-3xl font-bold">D'AUTRES PROJETS</h2>
+          <h2 className="text-3xl font-bold">D&apos;AUTRES PROJETS</h2>
           <p className="text-sm text-orange font-semibold">
             Restez aussi longtemps que vous le souhaitez.
           </p>
