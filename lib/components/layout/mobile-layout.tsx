@@ -6,7 +6,7 @@ import { FloatingPopup } from "../floating-popup";
 import { HeroMobile } from "../hero/hero-mobile";
 import { Slider } from "../slider/slider";
 
-export const MobileLayout = ({ children }: { children: React.ReactNode }) => {
+export const MobileLayout = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   return (
