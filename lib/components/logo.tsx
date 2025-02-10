@@ -1,7 +1,5 @@
 export const Logo = ({
-  mode = "light",
   className,
-  ...props
 }: React.SVGProps<SVGSVGElement> & {
   mode?: "light" | "dark";
 }) => {
