@@ -17,17 +17,17 @@ export const FloatingPopup = ({ isOpen, onClose }: FloatingPopupProps) => {
       {
         title: "Qui ?",
         description:
-          "Jeune designer spécialiser dans le brand design et l’illustration numérique, graphiste de formation. Je parfait me technique en explorant nombre de style graphique différent.",
+          "Jeune designer spécialiser dans le brand design et l'illustration numérique, graphiste de formation. Je parfait me technique en explorant nombre de style graphique différent.",
       },
       {
         title: "Quand ?",
         description:
-          "Après plusieurs années de pratique et de perfectionnement de mes techniques, j’ai choisi de proposer mes services sous le nom de BaldBoldArt. Début 2025 a marqué les premiers mois d’officialisation de ce projet.",
+          "Après plusieurs années de pratique et de perfectionnement de mes techniques, j'ai choisi de proposer mes services sous le nom de BaldBoldArt. Début 2025 a marqué les premiers mois d'officialisation de ce projet.",
       },
       {
         title: "Pourquoi ?",
         description:
-          "Fatigué des présentations surchargées, j’ai commencé à en illustrer pour mes amis durant mon temps libre. Ce passe-temps m’a poussé à envisager le graphisme. Désormais, j’aide les entreprises à se distinguer grâce à une identité visuelle originale et impactante.",
+          "Fatigué des présentations surchargées, j'ai commencé à en illustrer pour mes amis durant mon temps libre. Ce passe-temps m'a poussé à envisager le graphisme. Désormais, j'aide les entreprises à se distinguer grâce à une identité visuelle originale et impactante.",
       },
     ],
     []
