@@ -25,7 +25,7 @@ export const MobileContact = () => {
           {globalConfig.email.toUpperCase()}
         </p>
         <p className="text-white font-bold text-[20vw]">CONTACT</p>
-        <span className="text-background text-[0.6rem]">
+        <span className="text-background text-[0.6rem] pb-4">
           Copyright© 2025 - Developped by {globalConfig.developer} - designed by{" "}
           {globalConfig.designer}
         </span>
