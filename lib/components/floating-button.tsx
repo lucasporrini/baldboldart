@@ -1,4 +1,5 @@
 import { useColor } from "@/lib/context/color-context";
+import { Logo } from "./logo";
 
 export const FloatingButton = ({ onClick }: { onClick: () => void }) => {
   const { mainColor } = useColor();
@@ -9,7 +10,7 @@ export const FloatingButton = ({ onClick }: { onClick: () => void }) => {
         onClick={onClick}
         className={`bg-${mainColor} text-white p-3 rounded-l-full`}
       >
-        <div className="size-10 bg-white rounded-full mr-4" />
+        <Logo />
       </button>
     </div>
   );

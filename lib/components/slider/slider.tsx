@@ -50,7 +50,9 @@ export const Slider = () => {
                       </span>
                     </CardContent>
                   </Card>
-                  <button className="text-sm rounded-full bg-${mainColor} text-white font-semibold px-4 py-2 mt-2">
+                  <button
+                    className={`text-sm rounded-full bg-${mainColor} text-white font-semibold px-4 py-2 mt-2`}
+                  >
                     Voir le projet
                   </button>
                 </div>

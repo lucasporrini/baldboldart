@@ -7,7 +7,7 @@ export const MobileContact = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center text-center mt-20">
       <Image
-        src="/mobile-footer.webp"
+        src={`/mobile-footer-${mainColor}.webp`}
         alt="Contact"
         width={100}
         height={100}

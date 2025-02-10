@@ -36,7 +36,7 @@ export const MobileProject = () => {
         <div className="grid grid-cols-2 gap-10">
           <div className={`bg-${mainColor} rounded-xl w-full h-full`}>
             <Image
-              src="/writing.webp"
+              src={`/writing-${mainColor}.webp`}
               alt="Project 1"
               width={100}
               height={100}
@@ -45,7 +45,7 @@ export const MobileProject = () => {
           </div>
           <div className={`bg-${mainColor} rounded-xl w-full h-full`}>
             <Image
-              src="/writing.webp"
+              src={`/writing-${mainColor}.webp`}
               alt="Project 1"
               width={100}
               height={100}
@@ -54,7 +54,7 @@ export const MobileProject = () => {
           </div>
           <div className={`bg-${mainColor} rounded-xl w-full h-full`}>
             <Image
-              src="/writing.webp"
+              src={`/writing-${mainColor}.webp`}
               alt="Project 1"
               width={100}
               height={100}
@@ -63,7 +63,7 @@ export const MobileProject = () => {
           </div>
           <div className={`bg-${mainColor} rounded-xl w-full h-full`}>
             <Image
-              src="/writing.webp"
+              src={`/writing-${mainColor}.webp`}
               alt="Project 1"
               width={100}
               height={100}

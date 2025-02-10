@@ -68,7 +68,7 @@ export const FloatingPopup = ({ isOpen, onClose }: FloatingPopupProps) => {
         </button>
       </div>
       <Image
-        src="/writing.webp"
+        src={`/writing-${mainColor}.webp`}
         alt="Background"
         width={CONSTANTES.POPUP.IMAGE_WIDTH}
         height={CONSTANTES.POPUP.IMAGE_HEIGHT}

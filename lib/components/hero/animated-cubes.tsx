@@ -13,8 +13,6 @@ export const AnimatedCubes = () => {
     ];
   }, []);
 
-  console.log(cubes);
-
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none z-50">
       {cubes.map((cube, index) => (
