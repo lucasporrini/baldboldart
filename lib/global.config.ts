@@ -1,4 +1,4 @@
-export default {
+const config = {
   name: "Baldboldart",
   email: "baldboldart@gmail.com",
   developer: "Lucas PORRINI",
@@ -8,4 +8,6 @@ export default {
     background: "#EDE6D3",
     rose: "#FF6C7C",
   },
-};
+} as const;
+
+export default config;
