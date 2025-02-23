@@ -25,7 +25,10 @@ export const Hero = () => {
           <span className="font-bold ">Paris | Ile-de-France</span>
           <span className="text-sm">{globalConfig.email}</span>
         </div>
-        <FloatingButton className="block" onClick={() => {}} />
+        <FloatingButton
+          className="relative top-0 bottom-0 left-0 right-0"
+          onClick={() => {}}
+        />
       </div>
       <div className="flex h-full w-full items-center justify-center">
         <h1 className="text-4xl font-bold">Coucou from hero</h1>
