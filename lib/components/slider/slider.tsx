@@ -7,7 +7,9 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import { ITEMS } from "@/lib/constantes";
 import { useColor } from "@/lib/context/color-context";
+import { PopupButton } from "../popup-project/popup-button";
 
 export const Slider = () => {
   const plugin = React.useRef(
@@ -40,21 +42,23 @@ export const Slider = () => {
           }}
         >
           <CarouselContent className="-ml-1">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {ITEMS.map((item, index) => (
               <CarouselItem key={index} className="pl-1 basis-[65%]">
-                <div className="p-2 flex flex-col items-center gap-2">
+                <div className="flex flex-col items-center gap-2">
                   <Card className="w-full">
-                    <CardContent className="flex aspect-square items-center justify-center p-4">
-                      <span className="text-3xl font-semibold">
-                        {index + 1}
-                      </span>
+                    <CardContent className="p-0 flex rounded-xl aspect-square items-center justify-center overflow-hidden">
+                      <img
+                        src={item.images[0]}
+                        alt={item.title}
+                        className="w-full h-full object-cover"
+                      />
                     </CardContent>
                   </Card>
-                  <button
-                    className={`text-sm rounded-full bg-${mainColor} text-white font-semibold px-4 py-2 mt-2`}
-                  >
-                    Voir le projet
-                  </button>
+                  <PopupButton
+                    title={item.title}
+                    subtitle={item.subtitle}
+                    images={item.images}
+                  />
                 </div>
               </CarouselItem>
             ))}

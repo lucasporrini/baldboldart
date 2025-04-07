@@ -13,7 +13,9 @@ export const MobileProject = () => {
         </p>
       </div>
       <div className="grid grid-cols-2 gap-10">
-        <div className={`bg-${mainColor} rounded-xl w-full h-full`}>
+        <div
+          className={`bg-${mainColor} rounded-xl w-full h-full overflow-hidden`}
+        >
           <Image
             src={`/writing-${mainColor}.webp`}
             alt="Project 1"
@@ -22,7 +24,9 @@ export const MobileProject = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className={`bg-${mainColor} rounded-xl w-full h-full`}>
+        <div
+          className={`bg-${mainColor} rounded-xl w-full h-full overflow-hidden`}
+        >
           <Image
             src={`/writing-${mainColor}.webp`}
             alt="Project 1"
@@ -31,7 +35,9 @@ export const MobileProject = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className={`bg-${mainColor} rounded-xl w-full h-full`}>
+        <div
+          className={`bg-${mainColor} rounded-xl w-full h-full overflow-hidden`}
+        >
           <Image
             src={`/writing-${mainColor}.webp`}
             alt="Project 1"
@@ -40,7 +46,9 @@ export const MobileProject = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className={`bg-${mainColor} rounded-xl w-full h-full`}>
+        <div
+          className={`bg-${mainColor} rounded-xl w-full h-full overflow-hidden`}
+        >
           <Image
             src={`/writing-${mainColor}.webp`}
             alt="Project 1"

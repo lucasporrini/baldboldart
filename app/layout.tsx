@@ -1,4 +1,6 @@
+import { ProjectPopup } from "@/lib/components/popup-project/project-popup";
 import { ColorProvider } from "@/lib/context/color-context";
+import { PopupProvider } from "@/lib/context/popup-providers";
 import globalConfig from "@/lib/global.config";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Oswald } from "next/font/google";
@@ -36,7 +38,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} antialiased ${oswald.className}`}
     >
       <body>
-        <ColorProvider>{children}</ColorProvider>
+        <PopupProvider>
+          <ColorProvider>
+            {children}
+            <ProjectPopup />
+          </ColorProvider>
+        </PopupProvider>
       </body>
     </html>
   );
