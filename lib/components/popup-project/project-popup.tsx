@@ -57,10 +57,14 @@ export const ProjectPopup = () => {
       <div className="min-h-screen w-full p-6 md:p-12">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col gap-2 items-center mb-12 relative mx-auto">
-            <h2 className="text-3xl font-bold text-primary uppercase">
+            <h2 className="text-3xl font-bold text-primary uppercase mt-4">
               {title}
             </h2>
-            <p className={`text-2xl text-${mainColor} `}>{subtitle}</p>
+            <p
+              className={`text-md font-semibold text-center text-${mainColor} `}
+            >
+              {subtitle}
+            </p>
             <button
               onClick={closePopup}
               className={`absolute top-0 right-0 w-12 h-12 bg-${mainColor} rounded-full flex items-center justify-center transition-colors duration-200`}
