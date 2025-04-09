@@ -26,7 +26,7 @@ export const MobileContact = () => {
         </p>
         <p className="text-white font-bold text-[20vw]">CONTACT</p>
         <span className="text-background text-[0.6rem] pb-4">
-          Copyright© 2025 - Developped by {globalConfig.developer} - designed by{" "}
+          Copyright© 2025 - Developed by {globalConfig.developer} - Designed by{" "}
           {globalConfig.designer}
         </span>
       </div>

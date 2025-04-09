@@ -1,3 +1,5 @@
+import { Project } from "./type";
+
 export const CONSTANTES = {
   HERO_MOBILE: {
     IMAGE_WIDTH: 280,
@@ -11,92 +13,105 @@ export const CONSTANTES = {
 export const PUBLIC_IMAGE_FOLDER = {
   INSIGNA: {
     BANNIERE: "/insigna/banniere.jpg",
-    IMAGE_1: "/insigna/card.jpg",
-    IMAGE_2: "/insigna/etiquette.jpg",
-    IMAGE_3: "/insigna/logo_complet.jpg",
-    IMAGE_4: "/insigna/logo_team_color.jpg",
-    IMAGE_5: "/insigna/typo.jpg",
-    IMAGE_6: "/insigna/wall_text.jpg",
+    CARD: "/insigna/card.jpg",
+    ETIQUETTE: "/insigna/etiquette.jpg",
+    LOGO_COMPLET: "/insigna/logo_complet.jpg",
+    LOGO_TEAM_COLOR: "/insigna/logo_team_color.jpg",
+    TYPO: "/insigna/typo.jpg",
+    WALL_TEXT: "/insigna/wall_text.png",
   },
   BLOOMY: {
-    IMAGE_1: "/bloomy/bag.jpg",
-    IMAGE_2: "/bloomy/groupe.jpg",
-    IMAGE_3: "/bloomy/logo_photo.jpg",
-    IMAGE_4: "/bloomy/logo_rond.jpg",
-    IMAGE_5: "/bloomy/mockup.jpg",
-    IMAGE_6: "/bloomy/planning.jpg",
-    IMAGE_7: "/bloomy/typo.jpg",
-    IMAGE_8: "/bloomy/visage.jpg",
+    BAG: "/bloomy/bag.jpg",
+    GROUPE: "/bloomy/groupe.jpg",
+    LOGO_PHOTO: "/bloomy/logo_photo.jpg",
+    LOGO_ROND: "/bloomy/logo_rond.jpg",
+    MOCKUP: "/bloomy/mockup.jpg",
+    PLANNING: "/bloomy/planning.jpg",
+    TYPO: "/bloomy/typo.png",
+    VISAGE: "/bloomy/visage.jpg",
   },
   EDUCATEUR_SPORTIF: {
-    IMAGE_1: "/educateur_sportif/mockup T.jpg",
+    MOCKUP_T_SHIRT: "/educateur_sportif/mockup T.jpg",
   },
   GOOD_LIVING: {
-    IMAGE_1: "/good_living/be_bright.jpg",
-    IMAGE_2: "/good_living/rain_mockup.jpg",
-    IMAGE_3: "/good_living/rain.jpg",
-    IMAGE_4: "/good_living/raining_man.jpg",
-    IMAGE_5: "/good_living/sun_mockup.jpg",
-    IMAGE_6: "/good_living/sun.jpg",
-  },
-  ILLUSTRATION_SITE: {
-    IMAGE_1: "/illu site/crayon_O.webp",
-    IMAGE_2: "/illu site/crayon_R.webp",
-    IMAGE_3: "/illu site/footer_mobil_O.webp",
-    IMAGE_4: "/illu site/footer_O.webp",
-    IMAGE_5: "/illu site/footer_R.webp",
-    IMAGE_6: "/illu site/homme_crayon.webp",
+    BE_BRIGHT: "/good_living/be_bright.jpg",
+    RAIN_MOCKUP: "/good_living/rain_mockup.jpg",
+    RAIN: "/good_living/rain.jpg",
+    RAINING_MAN: "/good_living/raining_man.jpg",
+    SUN_MOCKUP: "/good_living/sun_mockup.jpg",
+    SUN: "/good_living/sun.jpg",
   },
   NAPOLI: {
-    IMAGE_1: "/napoli/bag.jpg",
-    IMAGE_2: "/napoli/main_sandwich.jpg",
-    IMAGE_3: "/napoli/panneau.jpg",
-    IMAGE_4: "/napoli/tablier.jpg",
-    IMAGE_5: "/napoli/viénoi.jpg",
-    IMAGE_6: "/napoli/vitre.jpg",
+    BAG: "/napoli/bag.jpg",
+    MAIN_SANDWICH: "/napoli/main_sandwich.jpg",
+    PANNEAU: "/napoli/panneau.jpg",
+    TABLIER: "/napoli/tablier.jpg",
+    VIENNOIS: "/napoli/viénoi.png",
+    VITRE: "/napoli/vitre.jpg",
   },
   NOESIS: {
-    IMAGE_1: "/noesis/carte_info.jpg",
-    IMAGE_2: "/noesis/illu_femme_cercle.jpg",
-    IMAGE_3: "/noesis/illu_corp.jpg",
-    IMAGE_4: "/noesis/mockup_logo.jpg",
-    IMAGE_5: "/noesis/noesis_horizontal.jpg",
-    IMAGE_6: "/noesis/Typo.jpg",
+    MOCKUP: "/noesis/mockup_logo.jpg",
+    CARTE_INFO: "/noesis/carte_info.jpg",
+    ILLU_FEMME_CERCLE: "/noesis/illu_femme_cercle.jpg",
+    ILLU_CORP: "/noesis/illu_corp.jpg",
+    NOESIS_HORIZONTAL: "/noesis/noesis_horizontal.jpg",
+    TYPO: "/noesis/Typo.jpg",
   },
   ORTHOPTISTE: {
-    IMAGE_1: "/orthoptiste/mockup.jpg",
+    MOCKUP: "/orthoptiste/mockup.jpg",
+  },
+  ONGLERIE: {
+    MOCKUP: "/onglerie/mockup.jpg",
   },
 };
 
-export const ITEMS = [
+export const ITEMS: Project[] = [
   {
     title: "Crossfit Insigna",
     subtitle: "Projet créatif à long terme pour une box de Crossfit",
     images: Object.values(PUBLIC_IMAGE_FOLDER.INSIGNA),
   },
   {
-    title: "Bloomy",
-    subtitle: "Description du projet",
-    images: Object.values(PUBLIC_IMAGE_FOLDER.BLOOMY),
-  },
-  {
-    title: "Educateur sportif",
-    subtitle: "Description du projet",
-    images: Object.values(PUBLIC_IMAGE_FOLDER.EDUCATEUR_SPORTIF),
-  },
-  {
-    title: "Good Living",
-    subtitle: "Description du projet",
-    images: Object.values(PUBLIC_IMAGE_FOLDER.GOOD_LIVING),
-  },
-  {
-    title: "Illustration site",
-    subtitle: "Description du projet",
-    images: Object.values(PUBLIC_IMAGE_FOLDER.ILLUSTRATION_SITE),
+    title: "Noesis",
+    subtitle: "Création d'une identité visuelle thérapeute psychocorporelle",
+    images: Object.values(PUBLIC_IMAGE_FOLDER.NOESIS),
   },
   {
     title: "Napoli",
-    subtitle: "Description du projet",
+    subtitle: "Rebranding d'un Café Italien 'Paris 11ème'",
     images: Object.values(PUBLIC_IMAGE_FOLDER.NAPOLI),
+  },
+];
+
+export const OTHER_PROJECTS: Project[] = [
+  {
+    title: "Good Living",
+    subtitle: "Version Soleil d'une illustration print cartoon",
+    images: [
+      PUBLIC_IMAGE_FOLDER.GOOD_LIVING.SUN_MOCKUP,
+      PUBLIC_IMAGE_FOLDER.GOOD_LIVING.RAIN_MOCKUP,
+      PUBLIC_IMAGE_FOLDER.GOOD_LIVING.SUN,
+    ],
+  },
+  {
+    title: "C.P & M.P Orhoptiste",
+    subtitle: "Logo & carte de visite",
+    images: [PUBLIC_IMAGE_FOLDER.ORTHOPTISTE.MOCKUP],
+  },
+  {
+    title: "Educateur Sportif",
+    subtitle: "Logo & carte de visite",
+    images: [PUBLIC_IMAGE_FOLDER.EDUCATEUR_SPORTIF.MOCKUP_T_SHIRT],
+  },
+  {
+    title: "Bloomy",
+    subtitle:
+      "Projet d'application de gestion des tâches ménagères dans les foyers",
+    images: [PUBLIC_IMAGE_FOLDER.BLOOMY.MOCKUP],
+  },
+  {
+    title: "Atelier d'onglerie",
+    subtitle: "Création d'une identité visuelle",
+    images: [PUBLIC_IMAGE_FOLDER.ONGLERIE.MOCKUP],
   },
 ];

@@ -41,9 +41,9 @@ export const Slider = () => {
             containScroll: "trimSnaps",
           }}
         >
-          <CarouselContent className="-ml-1">
+          <CarouselContent className="-ml-4">
             {ITEMS.map((item, index) => (
-              <CarouselItem key={index} className="pl-1 basis-[65%]">
+              <CarouselItem key={index} className="pl-4 basis-[65%]">
                 <div className="flex flex-col items-center gap-2">
                   <Card className="w-full">
                     <CardContent className="p-0 flex rounded-xl aspect-square items-center justify-center overflow-hidden">

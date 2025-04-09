@@ -46,14 +46,12 @@ export const ProjectPopup = () => {
     };
   }, [isOpen]);
 
-  console.log(images);
-
   if (!isOpen) return null;
 
   const imageGroups = organizeImages(images || []);
 
   return (
-    <div className="fixed top-0 left-0 inset-0 bg-background z-50 w-screen h-screen overflow-y-auto">
+    <div className="fixed top-0 left-0 inset-0 bg-background z-50 w-screen h-screen overflow-y-auto pb-12">
       <div className="min-h-screen w-full p-6 md:p-12">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col gap-2 items-center mb-12 relative mx-auto">
