@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
+import animate from "tailwindcss-animate";
 import globalConfig from "./lib/global.config";
+
 export default {
   darkMode: ["class"],
   content: [
@@ -77,6 +79,22 @@ export default {
             transform: "translateY(-100vh) rotate(360deg)",
           },
         },
+        cubeFloat: {
+          "0%": {
+            transform: "translateY(0) rotate(0deg)",
+            opacity: "0",
+          },
+          "5%": {
+            opacity: "0.5",
+          },
+          "50%": {
+            opacity: "0.5",
+          },
+          "100%": {
+            transform: "translateY(-100vh) rotate(360deg)",
+            opacity: "0",
+          },
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -88,5 +106,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [animate],
 } satisfies Config;
