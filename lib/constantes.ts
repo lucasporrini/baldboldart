@@ -115,3 +115,60 @@ export const OTHER_PROJECTS: Project[] = [
     images: [PUBLIC_IMAGE_FOLDER.ONGLERIE.MOCKUP],
   },
 ];
+
+export const EYE_DATA = {
+  LEFT: {
+    BACKGROUND: {
+      color: "white",
+      position: {
+        x: 110.772,
+        y: 110.772,
+      },
+      size: 70,
+    },
+    EYE: {
+      color: "black",
+      position: {
+        x: 110.772,
+        y: 110.772,
+      },
+      size: 30,
+    },
+    PUPIL: {
+      color: "white",
+      position: {
+        x: 110.772,
+        y: 110.772,
+      },
+      size: 10,
+    },
+  },
+  RIGHT: {
+    BACKGROUND: {
+      color: "white",
+      position: {
+        x: 363.229,
+        y: 110.772,
+      },
+      size: 70,
+    },
+    EYE: {
+      color: "black",
+      position: {
+        x: 363.229,
+        y: 110.772,
+      },
+      size: 30,
+    },
+    PUPIL: {
+      color: "white",
+      position: {
+        x: 363.229,
+        y: 110.772,
+      },
+      size: 10,
+    },
+  },
+};
+
+export const MOUTH_DATA = {};

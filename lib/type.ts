@@ -26,8 +26,14 @@ export type Cube = {
   left: string;
 };
 
+export type EyePosition = {
+  x: number;
+  y: number;
+};
+
 export type Glasses = {
   className?: string;
   color?: string;
   size?: number;
+  eyePosition: EyePosition;
 };

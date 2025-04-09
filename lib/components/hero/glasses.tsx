@@ -1,14 +1,16 @@
+import { EYE_DATA } from "@/lib/constantes";
 import { Glasses as GlassesType } from "@/lib/type";
-import { cn } from "@/lib/utils";
+import { calculateEyeStyle } from "@/lib/utils";
 
 export const Glasses = ({
   className,
   color = "black",
   size = 222,
+  eyePosition,
 }: GlassesType) => {
   return (
     <svg
-      className={cn("absolute", className)}
+      className={className}
       width={size * 2}
       height={size}
       viewBox="0 0 474 222"
@@ -35,6 +37,46 @@ export const Glasses = ({
         width="44.8975"
         height="12.5124"
         fill={color}
+      />
+      <circle
+        cx={EYE_DATA.LEFT.BACKGROUND.position.x}
+        cy={EYE_DATA.LEFT.BACKGROUND.position.y}
+        r={EYE_DATA.LEFT.BACKGROUND.size}
+        fill={EYE_DATA.LEFT.BACKGROUND.color}
+      />
+      <circle
+        cx={EYE_DATA.LEFT.EYE.position.x}
+        cy={EYE_DATA.LEFT.EYE.position.y}
+        r={EYE_DATA.LEFT.EYE.size}
+        fill={EYE_DATA.LEFT.EYE.color}
+        style={calculateEyeStyle(eyePosition)}
+      />
+      <circle
+        cx={EYE_DATA.LEFT.PUPIL.position.x}
+        cy={EYE_DATA.LEFT.PUPIL.position.y}
+        r={EYE_DATA.LEFT.PUPIL.size}
+        fill={EYE_DATA.LEFT.PUPIL.color}
+        style={calculateEyeStyle(eyePosition)}
+      />
+      <circle
+        cx={EYE_DATA.RIGHT.BACKGROUND.position.x}
+        cy={EYE_DATA.RIGHT.BACKGROUND.position.y}
+        r={EYE_DATA.RIGHT.BACKGROUND.size}
+        fill={EYE_DATA.RIGHT.BACKGROUND.color}
+      />
+      <circle
+        cx={EYE_DATA.RIGHT.EYE.position.x}
+        cy={EYE_DATA.RIGHT.EYE.position.y}
+        r={EYE_DATA.RIGHT.EYE.size}
+        fill={EYE_DATA.RIGHT.EYE.color}
+        style={calculateEyeStyle(eyePosition)}
+      />
+      <circle
+        cx={EYE_DATA.RIGHT.PUPIL.position.x}
+        cy={EYE_DATA.RIGHT.PUPIL.position.y}
+        r={EYE_DATA.RIGHT.PUPIL.size}
+        fill={EYE_DATA.RIGHT.PUPIL.color}
+        style={calculateEyeStyle(eyePosition)}
       />
     </svg>
   );
