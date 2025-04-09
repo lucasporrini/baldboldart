@@ -11,8 +11,6 @@ export const calculateEyeStyle = (eyePosition: { x: number; y: number }) => {
   const offsetX = (eyePosition.x - centerX) / 100;
   const offsetY = (eyePosition.y - centerY) / 100;
 
-  console.log(offsetX, offsetY);
-
   return {
     transform: `translate(${offsetX}px, ${offsetY}px)`,
   };
