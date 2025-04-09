@@ -6,7 +6,7 @@ import globalConfig from "@/lib/global.config";
 import { TextGradient } from "@/lib/ui/text-gradient";
 import Image from "next/image";
 import { useMemo } from "react";
-import { AnimatedCubes } from "./animated-cubes";
+import { CubesBackground } from "../background/cubes-background";
 
 export const HeroMobile = () => {
   const { mainColor } = useColor();
@@ -43,13 +43,14 @@ export const HeroMobile = () => {
       },
     ];
   }, []);
+
   return (
     <div className="relative w-full h-screen flex flex-col overflow-hidden">
-      <AnimatedCubes />
-
       <div
         className={`absolute -top-1/4 left-1/2 -translate-x-1/2 w-[1000px] h-[calc(113vh)] bg-${mainColor} rounded-full`}
-      ></div>
+      >
+        <CubesBackground density={50} />
+      </div>
       <div className="z-20 absolute bottom-[60px] flex items-center justify-center right-1/2 translate-x-1/2 size-[30vh] bg-background rounded-full">
         <Image
           src="/hero-mobile.webp"
