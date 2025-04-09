@@ -81,6 +81,11 @@ const Cube = ({
   left,
   fadeStartPercentage,
 }: CubeType & { fadeStartPercentage: number }) => {
+  const cubeId = useMemo(
+    () => `cube-${Math.random().toString(36).substring(2, 9)}`,
+    []
+  );
+
   return (
     <div
       className={cn(
@@ -89,13 +94,13 @@ const Cube = ({
       )}
       style={{
         left,
-        animation: `float ${duration} infinite ease-in-out`,
+        animation: `${cubeId} ${duration} infinite ease-in-out`,
         animationDelay: delay,
         opacity: 0,
       }}
     >
       <style jsx>{`
-        @keyframes float {
+        @keyframes ${cubeId} {
           0% {
             transform: translateY(0) rotate(0deg);
             opacity: 0;
@@ -104,7 +109,7 @@ const Cube = ({
             opacity: 0.5;
           }
           ${fadeStartPercentage}% {
-            opacity: 0.3;
+            opacity: 0.5;
           }
           100% {
             transform: translateY(-100vh) rotate(360deg);
