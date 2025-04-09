@@ -25,3 +25,9 @@ export type Cube = {
   duration: string;
   left: string;
 };
+
+export type Glasses = {
+  className?: string;
+  color?: string;
+  size?: number;
+};
